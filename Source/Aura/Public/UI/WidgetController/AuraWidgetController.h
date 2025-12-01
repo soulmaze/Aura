@@ -43,6 +43,8 @@ public:
 
 	UFUNCTION(BlueprintCallable)
 	void SetWidgetControllerParams(const FWidgetControllerPrams& WCParams);
+
+	virtual void BroadcastInitialValues();
 	
 protected:
 	
