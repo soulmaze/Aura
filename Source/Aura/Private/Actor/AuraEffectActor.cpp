@@ -35,6 +35,7 @@ void AAuraEffectActor::OnEndOverlap(UPrimitiveComponent* OverlappedComponent, AA
 		//in C++ there is a capability for changing const t o non const variable but that is not a good practice
 		UAuraAttributeSet* MutableAuraAttributeSet= const_cast<UAuraAttributeSet*>(AuraAttributeSet);
 		MutableAuraAttributeSet->SetHealth(AuraAttributeSet->GetHealth() + 25.f);
+		MutableAuraAttributeSet->SetMana(AuraAttributeSet->GetMana() + 25.f);
 		Destroy();
 	}
 }
